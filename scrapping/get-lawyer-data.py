@@ -43,9 +43,6 @@ while True:
                 contact["fax"] = item.text
             elif item.find_element(By.CSS_SELECTOR, "i").get_attribute("class").find("pin") != -1:
                 contact["site"] = item.text
-            else:
-                print("Autre")
-                item.text
         
         fiche += 1
         print(fiche)
